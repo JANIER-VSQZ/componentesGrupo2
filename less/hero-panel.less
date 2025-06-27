@@ -3,7 +3,6 @@
     height: 80vh;
     opacity: 0.8;
     padding-bottom: 2rem;
-    color: white;
 
     img {   
         .heroImg();
@@ -12,7 +11,7 @@
     .hero-action {
         position: absolute;
         opacity: 0.9;
-        background-color: @secondary-background-color;
+        background-color: @primary-background-color;
         .shadow();
         transform: translate(-50%, -50%);
         width: 380px;
@@ -45,12 +44,40 @@
     }
 
  
-    @media (max-width: 600px) {
+    @media (max-width: 426px) {
         .hero-action {
+            font-style: italic;
+            color: @tertiary-text-color;
             width: 90%;
             left: 50% ;
             top: 50% ;
-            transform: translate(-20%, -50%);
+            transform: translate(-20%, -20%);
+            p {
+                color: @primary-text-color;
+                font-weight: 500;
+                font-style: normal;
+            }
+        }
+
+       
+    }
+
+     @media (min-width: 768px) {
+        .hero-action {
+            font-style: italic;
+            color: @tertiary-text-color;
+            font-size: 3rem;
+            font-weight: 800;
+            width: 60%;
+            left: 50% ;
+            top: 50% ;
+            transform: translate(-5%, -20%);
+            p {
+                font-size: 2rem;
+                color: @primary-text-color;
+                font-weight: 500;
+                font-style: normal;
+            }
         }
 
        
