@@ -10,10 +10,28 @@
 </head>
 
 <body>
-  <header></header>
+  <header>
+    <nav id="navbar"
+    class="navbar">
+      <div class="container">
+        <a href="#" class="brand">Cine Estrella</a>
+        <ul class="nav-links">
+          <li><a href="#navbar">Inicio</a></li>
+          <li><a href="#hero-panel">Hero-panel</a></li>
+          <li><a href="#cards">Cards</a></li>
+          <li><a href="#panel invertido">Panel Invertido</a></li>
+          <li><a href="#testimonios">Testimonios</a></li>
+          <li><a href="#footer">Footer</a></li>
+        </ul>
+        <button class="nav-toggle" aria-label="Abrir menú">
+          &#9776;
+        </button>
+      </div>
+    </nav>
+  </header>
 
   <main>
-    <section class="hero-panel">
+    <section id="hero-panel" class="hero-panel">
       <picture>
         <img src="IMGS/hero.png" alt="Hero palomitas">
       </picture>
@@ -23,7 +41,7 @@
       </div>
     </section>
 
-    <section class="cards">
+    <section id="cards" class="cards">
       <div class="card">
         <img src="IMGS/cine1.jpg" alt="Imagen Cine 1">
         <span>Vive una experiencia única</span>
@@ -45,7 +63,7 @@
       </div>
     </section>
 
-    <section class="half-inverted">
+    <section id="panel invertido" class="half-inverted">
       <div class="left">
         <img src="public/IMGS/half-inverted.jpg">
       </div>
@@ -77,7 +95,7 @@
         </form>
       </div>
     </section>
-    <section class="testimonial-grid">
+    <section id="testimonios" class="testimonial-grid">
       <div class="testimonial-card">
         <img src="/IMGS/señorcine.jpg" alt="Cliente 1">
         <blockquote>
@@ -95,7 +113,8 @@
     </section>
   </main>
 
-  <footer class="cine-footer">
+  <footer id="footer"
+  class="cine-footer">
     <div class="cine-footer-container">
       <div class="cine-footer-section">
         <h3>Cine Estrella</h3>
